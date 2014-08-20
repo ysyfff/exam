@@ -500,3 +500,15 @@ input {
     font-family: tahoma;
     color: #0069ca;
 }
+.to-top {
+    position: fixed;
+    bottom: 100px;
+    width: 80px;
+    height: 80px;
+    background: url(http://simg1.qunarzz.com/site/images/flight/flight_lowprice/gotop.png) no-repeat;
+    cursor: pointer;
+    display: block;
+    z-index: 1000;
+    right: 100px;
+    opacity: .8;
+}
