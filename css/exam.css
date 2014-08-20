@@ -193,6 +193,7 @@ input {
  * display style
  */
 .result {
+    overflow: hidden;
     background-color: #f2fafd;
     padding: 18px 30px;
 }
@@ -334,6 +335,7 @@ input {
 
 .display {
     overflow: hidden;
+    width: 920px;
 }
 .data-area {
     width: 939px;
