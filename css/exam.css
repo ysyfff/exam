@@ -479,3 +479,24 @@ input {
     color: #333;
     border: none;
 }
+.page {
+    padding: 20px;
+    line-height: 18px;
+    text-align: right;
+}
+.page a{
+    margin-right: 5px;
+}
+.page b{
+    display: inline-block;
+    margin-right: 5px;
+    padding: 0 4px;
+    font-weight: 700;
+    font-style: normal;
+    background-color: #0069ca;
+    color: #fff;
+}
+.page .pt {
+    font-family: tahoma;
+    color: #0069ca;
+}
