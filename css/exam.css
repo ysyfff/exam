@@ -5,11 +5,15 @@
  * @Time   :  10:19
  * @Desc   :  
  */
+
+/**
+ * basic reset
+ */
 html {
     width: 100%;
     height: 100%;
 }
-body, ul, ol{
+body, ul, ol, input{
     margin: 0;
     padding: 0;
 }
@@ -25,10 +29,17 @@ ol, ul, button {
 a{
     text-decoration: none;
 }
+b{
+    font-weight: normal;
+}
 input {
     vertical-align: middle;
-    margin-top: -2px;
+    margin: -2px 2px 0 0;
 }
+
+/**
+ * clear-fix
+ */
 .clear-fix{
     *zoom: 1;
 }
@@ -40,6 +51,10 @@ input {
 .clear-fix:after{
     clear: both;
 }
+
+/**
+ * search style
+ */
 .content {
     width: 980px;
     margin: 0 auto;
@@ -70,7 +85,7 @@ input {
 .active a {
     color: #3f3f3f;
     cursor: default;
-    background: url(http://simg1.qunarzz.com/site/images/flight/home/bg_tabsel.png) repeat-x scroll 100% 100%;
+    background: url("http://simg1.qunarzz.com/site/images/flight/home/bg_tabsel.png") repeat-x scroll 100% 100%;
 }
 .tips span {
     color: #fe0053;
@@ -153,8 +168,9 @@ input {
     -moz-border-radius: 2px;
     border-radius: 2px;
 }
-.exchange{
-    background: url(http://simg1.qunarzz.com/site/images/flight/flight_search/bg_sephuan.png) no-repeat scroll 0 0;
+.exchange,
+.exchange:hover {
+    background: url("http://simg1.qunarzz.com/site/images/flight/flight_search/bg_sephuan.png") no-repeat scroll 0 0;
     display: block;
     position: absolute;
     height: 36px;
@@ -163,12 +179,100 @@ input {
     left: 261px;
     _left: 206px;
 }
-.exchange:hover{
-    background: url(http://simg1.qunarzz.com/site/images/flight/flight_search/bg_sephuan.png) no-repeat scroll 0 -50px;
+.exchange:hover {
+    background-position: 0 -50px;
 }
-.search-img{
+.search-img {
     position: absolute;
     top: -52px;
     left: -160px;
     _left: -215px;
+}
+
+/**
+ * display style
+ */
+.screen {
+    background-color: #f2fafd;
+    padding: 18px 30px;
+    position: relative;
+}
+.sort {
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+.sort li{
+    float: left;
+}
+.sort .more {
+    float: right;
+}
+.more a{
+    color: #666;
+}
+.screen-type {
+    width: 80px;
+    font-size: 14px;
+    color: #666;
+}
+.list-cur {
+    color: #f60;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 25px;
+}
+.list-nor {
+    color: #0069ca;
+    cursor: pointer;
+    margin-right: 24px;
+}
+.arrow-down, .arrow-up {
+    background: url("http://simg1.qunarzz.com/site/images/flight/flight_lowprice/ico_tj.png") no-repeat scroll 0 0;
+    width: 13px;
+    height: 7px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 5px;
+}
+.arrow-up {
+    background-position: 0 -20px;
+}
+.list-chk {
+    width: 50px;
+    display: inline-block;
+}
+.list-chk input {
+    margin-top: 2px;
+}
+.list-price {
+    height: 18px;
+    line-height: 18px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #f60;
+}
+.rmb {
+    font-weight: normal;
+    font-family: Arial;
+    font-size: 12px;
+}
+.slide {
+    height: 20px;
+}
+.slide-line {
+    height: 4px;
+    width: 225px;
+    border: 1px solid #bebebe;
+    position: relative;
+}
+.slide-block {
+    background: url(http://simg1.qunarzz.com/site/images/flight/flight_lowprice/ico_tj.png) no-repeat scroll 0 -120px;
+    cursor: pointer;
+    width: 18px;
+    height: 25px;
+    display: inline-block;
+    margin-left: -5px;
+    position: absolute;
+    top: -10px;
+    left: 100%;
 }
