@@ -195,7 +195,6 @@ input {
 .screen {
     background-color: #f2fafd;
     padding: 18px 30px;
-    position: relative;
 }
 .sort {
     line-height: 20px;
@@ -241,9 +240,6 @@ input {
     width: 50px;
     display: inline-block;
 }
-.list-chk input {
-    margin-top: 2px;
-}
 .list-price {
     height: 18px;
     line-height: 18px;
@@ -258,6 +254,7 @@ input {
 }
 .slide {
     height: 20px;
+    position: relative;
 }
 .slide-line {
     height: 4px;
