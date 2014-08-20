@@ -144,7 +144,7 @@ input {
     outline: none;
     vertical-align: middle;
     padding: 5px 2px 5px 5px;
-    margin: -1px 0 0 -5px;
+    margin: -1px 0 0 -6px;
     box-shadow: 0 0 5px #e2e2e2 inset;
 }
 .search-btn {
@@ -192,7 +192,7 @@ input {
 /**
  * display style
  */
-.screen {
+.result {
     background-color: #f2fafd;
     padding: 18px 30px;
 }
@@ -208,6 +208,9 @@ input {
 }
 .more a{
     color: #666;
+}
+.screen {
+    padding-bottom: 5px;
 }
 .screen-type {
     width: 80px;
@@ -225,8 +228,14 @@ input {
     cursor: pointer;
     margin-right: 24px;
 }
-.arrow-down, .arrow-up {
+.arrow-down,
+.arrow-up,
+.ico-up,
+.ico-down,
+.slide-block {
     background: url("http://simg1.qunarzz.com/site/images/flight/flight_lowprice/ico_tj.png") no-repeat scroll 0 0;
+}
+.arrow-up, .arrow-down {
     width: 13px;
     height: 7px;
     display: inline-block;
@@ -263,7 +272,7 @@ input {
     position: relative;
 }
 .slide-block {
-    background: url(http://simg1.qunarzz.com/site/images/flight/flight_lowprice/ico_tj.png) no-repeat scroll 0 -120px;
+    background-position: 0 -120px;
     cursor: pointer;
     width: 18px;
     height: 25px;
@@ -272,4 +281,50 @@ input {
     position: absolute;
     top: -10px;
     left: 100%;
+}
+.more-detail {
+    margin-bottom: 10px;
+}
+.sort-nav {
+    border: 1px solid #c2dae4;
+    background-color: #d6e0f2;
+    height: 29px;
+    line-height: 29px;
+    padding-right: 10px;
+    margin-bottom: 15px;
+}
+.sort-nav li {
+    float: left;
+}
+.sort-nav span {
+    display: block;
+    padding: 0 30px;
+}
+.sort-nav a{
+    display: inline-block;
+    height: 29px;
+    border-right: 1px solid #ccdee6;
+    color: #333;
+}
+.sort-nav a:hover{
+    background: #f2fafd;
+    border-right-color: #dae1e4;
+}
+.sort-nav .total {
+    float: right;
+}
+.cur {
+    background-color: #f2fafd;
+    border-bottom: 1px solid #f2fafd;
+    border-right-color: #dae2e4;
+}
+.ico-up, .ico-down {
+    position: relative;
+    left: -1px;
+}
+.ico-up {
+    background-position: 58px -70px;
+}
+.ico-down {
+    background-position: 0 -90px;
 }
