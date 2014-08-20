@@ -53,8 +53,8 @@ a{
     padding: 0 2px 0 10px;
     margin: 0 0 5px 145px;
 }
-.type{
-
+.type li {
+    float: left;
 }
 .type a {
     display: block;
@@ -63,8 +63,10 @@ a{
     font-size: 14px;
     font-weight: bold;
 }
-.type li {
-    float: left;
+.active a {
+    color: #3f3f3f;
+    cursor: default;
+    background: url(http://simg1.qunarzz.com/site/images/flight/home/bg_tabsel.png) repeat-x scroll 100% 100%;
 }
 .tips span {
     color: #fe0053;
