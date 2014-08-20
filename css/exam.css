@@ -359,6 +359,10 @@ input {
     color: #333;
     border: 1px solid #fff;
 }
+.data-area a:hover {
+    box-shadow:0 0 7px #a8def5;
+    border-color:#a8def5;
+}
 .data-price {
     line-height: 36px;
     color: #666;
@@ -462,4 +466,16 @@ input {
     border: 1px solid #ddd;
     border-bottom: 1px solid #fff;
     color: #333;
+}
+.city-list {
+    padding-left: 9px;
+}
+.city-list li {
+    width: 20%;
+    height: 25px;
+    line-height: 25px;
+}
+.city-list a {
+    color: #333;
+    border: none;
 }
