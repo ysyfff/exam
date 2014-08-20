@@ -16,14 +16,18 @@ body, ul, ol{
 body{
     font: normal 12px/1.5 arial, sans-serif;
 }
-main {
+.wrapper {
     background: #27afea url("http://simg1.qunarzz.com/site/images/flight/flight_lowprice/bg_lp.jpg") no-repeat;
 }
-ol, ul {
+ol, ul, button {
     list-style: none;
 }
 a{
     text-decoration: none;
+}
+input {
+    vertical-align: middle;
+    margin-top: -2px;
 }
 .clear-fix{
     *zoom: 1;
@@ -73,4 +77,98 @@ a{
 }
 .tips {
     float: right;
+}
+.search-detail {
+    position: relative;
+    margin-left: 160px;
+    padding-bottom: 12px;
+}
+.line {
+    padding: 5px 0 13px 55px;
+}
+.input {
+    padding-left: 20px;
+    margin-bottom: 6px;
+}
+.line label {
+    font-size: 14px;
+    margin-right: 20px;
+}
+.input-name,
+.name-hidden {
+    width: 45px;
+    padding: 4px 5px 0 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+.name-hidden{
+    visibility: hidden;
+}
+.date{
+    margin-left: 25px;
+}
+.select-date {
+    margin-right: 20px;
+}
+.input input {
+    width: 194px;
+    border: 1px solid #abadb3;
+    outline: none;
+    padding: 5px;
+    height: 20px;
+    font: normal 14px/18px tahoma,arial,sans-serif;
+    vertical-align: middle;
+    background-color: #fff;
+    box-shadow: 0 0 5px #e2e2e2 inset;
+}
+.input select {
+    border: 1px solid #abadb3;
+    height: 32px;
+    line-height: 20px;
+    font-size: 14px;
+    outline: none;
+    vertical-align: middle;
+    padding: 5px 2px 5px 5px;
+    margin: -1px 0 0 -5px;
+    box-shadow: 0 0 5px #e2e2e2 inset;
+}
+.search-btn {
+    position: relative;
+    top: 2px;
+    border: 0;
+    cursor: pointer;
+    color: #fff;
+    font: 16px/28px microsoft yahei;
+    height: 30px;
+    text-align: center;
+    width: 100px;
+    background: #ff8200;
+    background: linear-gradient(top,#ff9100 0,#ff8a00 30%,#ff7b00 60%,#ff7100 100%);
+    background: -moz-linear-gradient(top,#ff9100 0,#ff8a00 30%,#ff7b00 60%,#ff7100 100%);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#ff9100),color-stop(30%,#ff8a00),color-stop(60%,#ff7b00),color-stop(100%,#ff7100));
+    background: -webkit-linear-gradient(top,#ff9100 0,#ff8a00 30%,#ff7b00 60%,#ff7100 100%);
+    background: -o-linear-gradient(top,#ff9100 0,#ff8a00 30%,#ff7b00 60%,#ff7100 100%);
+    background: -ms-linear-gradient(top,#ff9100 0,#ff8a00 30%,#ff7b00 60%,#ff7100 100%);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+.exchange{
+    background: url(http://simg1.qunarzz.com/site/images/flight/flight_search/bg_sephuan.png) no-repeat scroll 0 0;
+    display: block;
+    position: absolute;
+    height: 36px;
+    width: 22px;
+    top: 56px;
+    left: 261px;
+    _left: 206px;
+}
+.exchange:hover{
+    background: url(http://simg1.qunarzz.com/site/images/flight/flight_search/bg_sephuan.png) no-repeat scroll 0 -50px;
+}
+.search-img{
+    position: absolute;
+    top: -52px;
+    left: -160px;
+    _left: -215px;
 }

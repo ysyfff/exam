@@ -7,7 +7,7 @@
     <title>【去哪儿网】机票查询,特价机票,打折飞机票-去哪儿网Qunar.com</title>
 </head>
 <body>
-    <main>
+    <div class="wrapper">
         <div class="content">
             <div class="search clear-fix">
                 <div class="search-type">
@@ -21,11 +21,37 @@
                     </div>
                 </div>
                 <div class="search-detail">
-                    <div class="search-line"></div>
-                    <div class="search-input"></div>
+                    <div class="line">
+                        <label for="china">
+                            <input type="radio" id="china" name="fly-line" checked="checked">国内航线
+                        </label>
+                        <label for="world">
+                            <input type="radio" id="world" name="fly-line">国际·港澳台航线
+                        </label>
+                    </div>
+                    <div class="input">
+                        <span><span class="input-name">城市</span><input type="text"></span>
+                        <span class="date"><span class="input-name">日期</span><input type="text"></span>
+                        <span class="select-date">
+                            <select>
+                                <option selected="selected">前后7天</option>
+                                <option>当天</option>
+                                <option>前后3天</option>
+                                <option>前后15天</option>
+                                <option>前后30天</option>
+                            </select>
+                        </span>
+                        <button type="button" class="search-btn">搜索</button>
+                    </div>
+                    <div class="input">
+                        <sapn><span class="name-hidden">城市</span><input type="text"></sapn>
+                    </div>
+                    <a class="exchange"></a>
+                    <div class="search-img">
+                        <img src="http://simg1.qunarzz.com/site/images/flight/flight_lowprice/img_tjjp_v2.png" alt="">
+                    </div>
                 </div>
             </div>
-            <div class="ad"></div>
             <div class="result">
                 <div class="screen">
                 </div>
@@ -35,6 +61,6 @@
                 </div>
             </div>
         </div>
-    </main>
+    </div>
 </body>
 </html>
