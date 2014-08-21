@@ -5,3 +5,5 @@
  * @Time   :  10:18
  * @Desc   :
  */
+var data = new Data();
+data.getData();
